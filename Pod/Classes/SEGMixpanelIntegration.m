@@ -25,7 +25,7 @@
     if (self = [super init]) {
         self.settings = settings;
         NSString *token = [self.settings objectForKey:@"token"];
-        self.mixpanel = [Mixpanel sharedInstanceWithToken:(NSString *)token trackAutomaticEvents:false
+        self.mixpanel = [Mixpanel sharedInstanceWithToken:(NSString *)token trackAutomaticEvents:true
                 optOutTrackingByDefault:false
         ];
     }
